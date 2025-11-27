@@ -1,0 +1,17 @@
+<div class="ui-form-field"
+     [class.focused]="isFocused"
+     [class.filled]="isFilled">
+
+  <ng-content select="ff-label"></ng-content>
+
+  <div class="control-row">
+    <ng-content class="ff-suffix" select="ff-prefix"></ng-content>
+    <ng-content class="ff-form-control" select="[ffFormControl]"></ng-content>
+    <ng-content class="ff-suffix" select="ff-suffix"></ng-content>
+  </div>
+
+  @if (!hasError()) {
+    <ng-content select="ff-hint"></ng-content>
+  }
+  <ng-content select="ff-error"></ng-content>
+</div>
