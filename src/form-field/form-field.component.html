@@ -5,9 +5,9 @@
   <ng-content select="ff-label"></ng-content>
 
   <div class="control-row">
-    <ng-content class="ff-suffix" select="ff-prefix"></ng-content>
-    <ng-content class="ff-form-control" select="[ffFormControl]"></ng-content>
-    <ng-content class="ff-suffix" select="ff-suffix"></ng-content>
+    <ng-content select="ff-prefix"></ng-content>
+    <ng-content select="[ffFormControl]"></ng-content>
+    <ng-content select="ff-suffix"></ng-content>
   </div>
 
   @if (!hasError()) {

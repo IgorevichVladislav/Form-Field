@@ -4,7 +4,7 @@
     <app-form-field>
       <ff-label for="login">Имя</ff-label>
       <ff-prefix>👤</ff-prefix>
-      <input ffFormControl id="login" formControlName="name" type="text"/>
+      <input class="ff-input" ffFormControl id="login" formControlName="name" type="text"/>
       <ff-hint>Введите ваше имя полностью</ff-hint>
 
       @if (form.get('name')?.hasError('required') && form.get('name')?.touched) {
@@ -17,7 +17,7 @@
 
     <app-form-field>
       <ff-label for="email">Email</ff-label>
-      <input ffFormControl id="email" formControlName="email" type="email"/>
+      <input class="ff-input" ffFormControl id="email" formControlName="email" type="email"/>
       <ff-suffix>mail.com</ff-suffix>
 
       @if (form.get('email')?.hasError('required') && form.get('email')?.touched) {
